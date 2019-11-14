@@ -1,3 +1,8 @@
+# This is a WIP skeletonfor prototyping and explaining the design system I am evolving.
+
+
+
+## react-react-app information
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
