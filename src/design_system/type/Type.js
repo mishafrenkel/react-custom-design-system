@@ -14,6 +14,12 @@ export const TextBold = {
   bold: 'ds-text--bold'
 };
 
+export const TextAlign = {
+  default: 'ds-text-align--default',
+  right: 'ds-text-align--right',
+  justify: 'ds-text-align--justify'
+}
+
 export const Type = ({
   tag = 'span',
   size = TextSize.default,
