@@ -1,4 +1,3 @@
-// design-system/type/Type.js
 import React, { Component } from 'react';
 import './type.scss';
 
@@ -20,13 +19,9 @@ export const TextAlign = {
   justify: 'ds-text-align--justify'
 }
 
-export const Type = ({
-  tag = 'span',
-  size = TextSize.default,
-  boldness = TextBold.default,
-  children, className = '',
-  align = TextAlign.default,
-  ...rest }) => {
+// In  design-system/type/Type.js
+
+export const Type = ({ tag = 'span', size = TextSize.default, boldness = TextBold.default, children, className = '', align = TextAlign.default, ...rest }) => {
   const Tag = `${tag}`;
   const classNames = `ds-text ${size} ${boldness} ${align} ${className}`;
   return <Tag className={classNames} {...rest}>

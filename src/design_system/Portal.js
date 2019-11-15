@@ -1,4 +1,3 @@
-// design-system/Portal.js
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Box, Flex } from './layouts/Layouts';
@@ -10,6 +9,7 @@ export class Portal extends React.Component {
     super(props);
     this.el = document.createElement('div');
   }
+
   componentDidMount() {
     this.props.root.appendChild(this.el);
   }
@@ -26,6 +26,7 @@ export class Portal extends React.Component {
   }
 }
 
+
 export const Modal = ({ children, root, closeModal, header }) => {
   return <Portal root={root} className="ds-modal">
     <div className="modal-wrapper">
@@ -37,5 +38,5 @@ export const Modal = ({ children, root, closeModal, header }) => {
         {children}
       </Box>
     </div>
-  </Portal >
-};
+  </Portal>
+}

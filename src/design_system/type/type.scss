@@ -1,5 +1,3 @@
-/* design-system/type/type.scss*/
-
 @import '../../styles/variables.scss';
 $base-font: $base-px * 4;
 
@@ -25,5 +23,9 @@ $base-font: $base-px * 4;
 
   &.ds-text--bold {
     font-weight: 700;
+  }
+
+  &.ds-text-align--right {
+    text-align: right;
   }
 }
